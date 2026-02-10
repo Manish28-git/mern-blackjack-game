@@ -10,6 +10,7 @@ A full-stack Blackjack game built using React, Node.js, Express, and MongoDB Atl
 - MongoDB Atlas integration
 
 --Tech Stack--
+
 Frontend: React  
 Backend: Node.js, Express  
 Database: MongoDB Atlas  
