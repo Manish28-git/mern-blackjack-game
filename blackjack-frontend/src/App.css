@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at center, #0b3d2e, #021a13);
+    color: white;
+}
+
+.App {
+    text-align: center;
+}
+
+/* Main Game Container */
+.kl {
+    min-height: 100vh;
+    padding: 30px;
+}
+
+/* Title */
+h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+/* Player & Dealer Section */
+.ma {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+/* Card Container */
+.playerside,
+.dealerside {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 20px 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    min-width: 250px;
+}
+
+/* Card List */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+li {
+    background: white;
+    color: #111;
+    margin: 6px 0;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* Score */
+p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 30px;
+}
+
+button {
+    background: linear-gradient(135deg, #ffd700, #ffb700);
+    color: #111;
+    border: none;
+    padding: 12px 25px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #fff176, #ffd700);
+}
+
+/* Winner Message */
+.winner-message {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff4d4d;
+    margin-top: 20px;
+    animation: pop 0.5s ease;
+}
+
+@keyframes pop {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
